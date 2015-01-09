@@ -16,6 +16,7 @@ power$Sub_metering_1 <- as.numeric(gsub('?', '', power$Sub_metering_1))
 power$Sub_metering_2 <- as.numeric(gsub('?', '', power$Sub_metering_2))
 power$Sub_metering_3 <- as.numeric(gsub('?', '', power$Sub_metering_3))
 
+#generate the plot of active power vs time
 png("plot2.png", width = 480, height = 480)
 plot(power$Time, power$Global_active_power, type = 'l', ylab= 'Global Active Power (kilowatts)', xlab = '')
 dev.off()

@@ -17,6 +17,7 @@ power$Sub_metering_1 <- as.numeric(gsub('?', '', power$Sub_metering_1))
 power$Sub_metering_2 <- as.numeric(gsub('?', '', power$Sub_metering_2))
 power$Sub_metering_3 <- as.numeric(gsub('?', '', power$Sub_metering_3))
 
+#create the histgram plot
 png("plot1.png", width = 480, height = 480)
 hist(power$Global_active_power, right=FALSE, col='red', main='Global Active Power', xlab= 'Global Active Power (kilowatts)')
 dev.off()

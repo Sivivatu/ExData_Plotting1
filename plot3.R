@@ -16,6 +16,7 @@ power$Sub_metering_1 <- as.numeric(gsub('?', '', power$Sub_metering_1))
 power$Sub_metering_2 <- as.numeric(gsub('?', '', power$Sub_metering_2))
 power$Sub_metering_3 <- as.numeric(gsub('?', '', power$Sub_metering_3))
 
+#Plot to generate Sub metering vs time
 png("plot3.png", width = 480, height = 480)
 plot(power$Time, power$Sub_metering_1, type = 'l', ylab= 'Energy Sub Metering', xlab = '')
 lines(power$Time, power$Sub_metering_2, col = 'red')

@@ -17,6 +17,7 @@ power$Sub_metering_1 <- as.numeric(gsub('?', '', power$Sub_metering_1))
 power$Sub_metering_2 <- as.numeric(gsub('?', '', power$Sub_metering_2))
 power$Sub_metering_3 <- as.numeric(gsub('?', '', power$Sub_metering_3))
 
+#code to generate the 4 lattice plots separated by the comments below
 png("plot4.png", width = 480, height = 480)
 par(mfrow=c(2,2))
 #plot 1
